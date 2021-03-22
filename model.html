@@ -1,1 +1,208 @@
-﻿
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodNutrition</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <section class="navs">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">
+                        <span><i class="fas fa-heartbeat"></i></span>
+                        Food-Nutrition
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nutrition.html">Nutrition Info</a></li>
+                        <li><a href="food.html">Know your food</a></li>
+                        <li class="active"><a href="#">Model</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="model-title text-center">
+        <div class="model-wrapper">
+            <div class="container">
+                <div class="row">
+                    <h1 class="headline">Know about the Data Model</h1>
+                </div>
+                <div class="row">
+                    <div class="sub-headline">
+                        <p>Food Central Data </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="model-content">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-9">
+                    <div class="model-header">So, From where are we getting the data?</div>
+
+                    <div class="model-c">
+                        <div class="model-q"><span class="model-t">+</span>What is the FoodCentral Data?</div>
+                        <div class="model-a">
+                            <p>
+                                We have used FoodData Central application which is an integrated, research-focused data system that provides expanded data on nutrients and other foods components as well as links to sources of related agricultural, food, dietary supplement, and other information. FoodData Central can be used by, and has benefits for, a variety of users, including researchers, policy makers, academicians and educators, nutrition and health professionals, product developers, and others.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-c">
+                        <div class="model-q"><span class="model-t">+</span>Data Source and Description</div>
+                        <div class="model-a">
+                            <p>
+                                We have used FoodData Central application programming interface. All the api documents and usage guides are available <a href="https://fdc.nal.usda.gov/api-guide.html">here</a>.
+                            </p>
+
+                            </br>
+
+                            <p>FoodData Central includes five data types. Two of these types, Foundation Foods and Experimental Foods, provide data that have never been available previously. The three other types are the National Nutrient Database for Standard Reference Legacy Release (SR Legacy), Food and Nutrient Database for Dietary Studies 2017-2018 (FNDDS 2017-2018), and the USDA Global Branded Food Products Database (Branded Foods)</p>
+                            </br>
+                            <p>Foundation Foods includes values for nutrients and other food components on a diverse range of foods and ingredients as well as extensive underlying metadata.</p>
+                            </br>
+                            <p>Experimental Foods contains data that do not appear in any other dataset searchable from FoodData Central. The overall goal of this data type is to allow users to focus on the research aspects and deeper understanding of factors related to food composition.</p>
+                            </br>
+                            <p>SR Legacy provides nutrient and food component values that are derived from analyses, calculations, and the published literature. </p>
+                            </br>
+                            <p>Food and Nutrient Database for Dietary Studies 2017-2018 (FNDDS 2017-2018) contains data on the nutrient and food component values and weights for foods and beverages reported in the What We Eat in America dietary survey component of the National Health and Nutrition Examination Survey.</p>
+                            </br>
+                            <p>USDA Global Branded Food Products Database (Branded Foods), formerly hosted on the USDA Food Composition Databases website, are data from a public-private partnership that provides values for nutrients in branded and private label foods that appear on the product label.</p>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-c">
+                        <div class="model-q"><span class="model-t">+</span>What API's have we used? </div>
+                        <div class="model-a">
+                            <p>
+                                Below are the api end-points we have used.
+                                </br>
+                                GET/ https://fdc.nal.usda.gov/api-spec/fdc_api.html#/FDC/getFood
+                                </br>
+                                GET/ https://fdc.nal.usda.gov/api-spec/fdc_api.html#/FDC/getFoodsList
+                                </br>
+                                GET/ https://fdc.nal.usda.gov/api-spec/fdc_api.html#/FDC/getFoods
+                                </br>
+                                GET/ https://fdc.nal.usda.gov/api-spec/fdc_api.html#/FDC/getFoodsSearch
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-c">
+                        <div class="model-q"><span class="model-t">+</span>How does our data model look like?</div>
+                        <div class="model-a">
+                            <img class="img-responsive center-block" src="assets/img/p1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="model-c">
+                        <div class="model-q"><span class="model-t">+</span>Collaboration</div>
+                        <div class="model-a">
+                            <p>We have used github to collaborate across the team during various stages of bug-fixing and development. </p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </main>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <ul class="text-center contact">
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                        </li>
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Share in Pinterest" class="pinterest"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li class="socials-icons">
+                            <a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fab fa-skype"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+    <script type="text/javascript">
+			$(".model-q").click( function () {
+			  var container = $(this).parents(".model-c");
+			  var answer = container.find(".model-a");
+			  var trigger = container.find(".model-t");
+
+			  answer.slideToggle(200);
+
+			  if (trigger.hasClass("model-o")) {
+			    trigger.removeClass("model-o");
+			  }
+			  else {
+			    trigger.addClass("model-o");
+			  }
+			});
+    </script>
+
+
+</body>
+</html>
+
+
+
